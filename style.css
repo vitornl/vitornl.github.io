@@ -570,6 +570,13 @@ div[data-dimension] {
   text-align: center;
   text-transform: uppercase;
 }
+.count-text-mini {
+    color: #313338;
+    font-size: 14px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    text-align: center;
+}
 .fa-2x {
   display: table;
   float: none;
