@@ -1,444 +1,123 @@
 <!DOCTYPE html>
-<html lang="pt">
-  <head>
-    <!-- Basic Page Needs
-      ================================================== -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Vítor Lourenço</title>
-    <!-- Mobile Specific Metas
-      ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Favicon -->
-    <!--link rel="shortcut icon" type="image/ico" href="img/cube.ico"/>
-      <!-- CSS
-         ================================================== -->
-    <!-- Bootstrap css file-->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font awesome css file-->
-    <link href="css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <!-- Font roboto light css file-->
-    <!-- <link href="css/font-robotolight.min.css" rel="stylesheet"> -->
-    <!-- Superslide css file-->
-    <link rel="stylesheet" href="css/superslides.css">
-    <!-- Slick slider css file -->
-    <link href="css/slick.css" rel="stylesheet">
-    <!-- smooth animate css file -->
-    <link rel="stylesheet" href="css/animate.css">
-    <!-- Elastic grid css file -->
-    <link rel="stylesheet" href="css/elastic_grid.css">
-    <!-- Circle counter cdn css file -->
-    <link rel='stylesheet prefetch' href='https://cdn.rawgit.com/pguso/jquery-plugin-circliful/master/css/jquery.circliful.css'>
-    <!-- Default Theme css file -->
-    <link id="orginal" href="css/theme.css" rel="stylesheet">
-    <!-- Main structure css file -->
-    <link href="style.css" rel="stylesheet">
-    <!--Direct-Aware Hover -->
-    <link rel="stylesheet" href="css/dahover.css" />
-    <link rel="stylesheet" href="css/logo.css" />
-    <link rel="stylesheet" href="css/timeline.css" />
-    <!--fontello lattes-->
-    <link rel="stylesheet" href="css/fontello.css">
-    <link rel="stylesheet" href="css/fontello-codes.css">
-    <link rel="stylesheet" href="css/fontello-embedded.css">
-    <link rel="stylesheet" href="css/fontello-ie7-codes.css">
-    <link rel="stylesheet" href="css/fontello-ie7.css">
-    <link rel="stylesheet" href="css/font-mfizz-2.4.1/font-mfizz.css">
-    <!-- Google fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-  </head>
-  <body>
-    <!-- BEGAIN PRELOADER -->
-    <div id="preloader">
-      <div id="status">&nbsp;</div>
-    </div>
-    <!-- END PRELOADER -->
-    <!-- SCROLL TOP BUTTON -->
-    <a class="scrollToTop" href="#"><i class="fa fa-angle-double-up"></i></a>
-    <!-- END SCROLL TOP BUTTON -->
-    <!--=========== BEGIN HEADER SECTION ================-->
-    <header id="header">
-      <!-- BEGIN MENU -->
-      <div class="menu_area">
-        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              </button>
-              <!-- LOGO -->
-              <a class="navbar-brand" id="test" href="#">
-              <img class="hidden-mvlogo" src="img/logo.png">
-              <img class="hidden-mvlogo" src="img/logo1.png">
-              <img id="animation-mvlogo" alt="logo" src="img/logo.png">
-              </a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul id="top-menu" class="nav navbar-nav navbar-right main_nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#works">Projetos</a></li>
-                <li><a href="#contact">Contatos</a></li>
-                <li>
-                  <a href="index.html"><img src="img/page/pt_br.png"></img>
-                  </a>
-                </li>
-                <li>
-                  <a href="index-en_uk.html"><img src="img/page/en_uk.png"></img>
-                  </a>
-                </li>
-                <li>
-                  <a href="index-de_de.html"><img src="img/page/de_de.png"></img>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
-      <!-- END MENU -->
-      <!-- BEGIN SLIDER AREA-->
-      <div class="slider_area">
-        <!-- BEGIN SLIDER-->
-        <div id="slides">
-          <ul class="slides-container">
-            <!-- THE FIRST SLIDE-->
-            <li>
-              <!-- FIRST SLIDE OVERLAY -->
-              <div class="slider_overlay"></div>
-              <!-- FIRST SLIDE MAIN IMAGE -->
-              <img src="img/page/slider1.jpg" alt="img">
-              <!-- FIRST SLIDE CAPTION-->
-              <div class="slider_caption">
-                <h2>Olá, mundo!<br/>(Em construção...)</h2>
-                <p>Prazer, meu nome é Vítor!</p>
-                <a href="#about" class="slider_btn">Descubra mais sobre mim</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <!-- END SLIDER-->
-      </div>
-      <!-- END SLIDER AREA -->
-    </header>
-    <!--=========== End HEADER SECTION ================-->
-    <!--=========== BEGIN ABOUT SECTION ================-->
-    <section id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 col-md-12">
-            <div class="about_area">
-              <!-- START ABOUT HEADING -->
-              <div class="heading">
-                <h2 class="wow fadeInLeftBig">Sobre Mim</h2>
-                <p class="text-styling">Vítor Nascimento Lourenço é aluno do curso de Bacharelado em Ciência da Computação pelo Instituto de Computação (IC-UFF) da Universidade Federal Fluminense, é técnico em informática pelo Centro Federal de Educação Tecnológica do Rio de Janeiro e possui certificação no Minor em Empreendedorismo e Inovação pelo Departamento de Empreendedorismo e Gestão da Universidade Federal Fluminense. Ele foi o fundador e atual líder do Clube de Ciência de Dados e é membro do Grupo de Pesquisa em Banco de Dados, grupo de pesquisa do IC-UFF.
-                </p>
-              </div>
-              <!-- START ABOUT CONTENT -->
-              <div class="about_content">
-                <div class="row">
-                  <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="about_featured">
-                      <div class="panel-group" id="accordion">
-                        <!-- START SINGLE FEATURED ITEAM #1-->
-                        <div class="panel panel-default wow fadeInLeft">
-                          <div class="panel-heading">
-                            <h4 class="panel-title">
-                              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                              <span class="fa fa-check-square-o"></span>Areas de Interesse
-                              <i class="fa fa-lightbulb-o"></i>
-                              </a>
-                            </h4>
-                          </div>
-                          <div id="collapseOne" class="panel-collapse collapse">
-                            <div class="panel-body">
-                              <ul>
-                                <li>Aprendizado de Máquina</li>
-                                <li>Redes Neurais</li>
-                                <li>Reconhecimento de Padrões</li>
-                                <li>Computação Paralela e Distribuída</li>
-                                <li>Ciência de Dados</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- START SINGLE FEATURED ITEAM #2 -->
-                        <div class="panel panel-default wow fadeInLeft">
-                          <div class="panel-heading">
-                            <h4 class="panel-title">
-                              <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                              <span class="fa fa-check-square-o"></span>Formação Acadêmica
-                              <i class="fa fa-graduation-cap"></i>
-                              </a>
-                            </h4>
-                          </div>
-                          <div id="collapseTwo" class="panel-collapse collapse">
-                            <div class="panel-body">
-                              <ul>
-                                <li>2014-Atual | Ciência da Computação - UFF</li>
-                                <li>2011-2014 | Técnico em Informática - CEFET/RJ</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- START SINGLE FEATURED ITEAM #3 -->
-                        <div class="panel panel-default wow fadeInLeft">
-                          <div class="panel-heading">
-                            <h4 class="panel-title">
-                              <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                              <span class="fa fa-check-square-o"></span>Formação Complementar
-                              <i class="fa fa-pencil-square-o"></i>
-                              </a>
-                            </h4>
-                          </div>
-                          <div id="collapseThree" class="panel-collapse collapse">
-                            <div class="panel-body">
-                              <ul>
-                                <li>2014-2015</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- START SINGLE FEATURED ITEAM #4 -->
-                        <div class="panel panel-default wow fadeInLeft">
-                          <div class="panel-heading">
-                            <h4 class="panel-title">
-                              <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
-                              <span class="fa fa-check-square-o"></span>Idiomas
-                              <i class="fa fa-language"></i>
-                              </a>
-                            </h4>
-                          </div>
-                          <div id="collapseFour" class="panel-collapse collapse">
-                            <div class="panel-body">
-                              <ul>
-                                <li>Português</li>
-                                <li>Inglês</li>
-                                <li>Alemão</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- START SINGLE FEATURED ITEAM #5 -->
-                        <div class="panel panel-default wow fadeInLeft">
-                          <div class="panel-heading">
-                            <h4 class="panel-title">
-                              <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
-                              <span class="fa fa-check-square-o"></span>Links Úteis
-                              <i class="fa fa-external-link"></i>
-                              </a>
-                            </h4>
-                          </div>
-                          <div id="collapseFive" class="panel-collapse collapse">
-                            <div class="panel-body">
-                              <ul>
-                                <li>Link1</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="about_slider">
-                      <!-- BEGAIN FEATURED SLIDER -->
-                      <div class="featured_slider">
-                        <!-- SINGLE SLIDE IN THE SLIDER -->
-                        <div class="single_iteam">
-                          <a id="collapse1"> <img src="img/page/press1.jpg" alt="img"></a>
-                        </div>
-                        <div class="single_iteam">
-                          <a id="collapse2"> <img src="img/page/press2.jpg" alt="img"></a>
-                        </div>
-                      </div>
-                      <!-- END FEATURED SLIDER -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--=========== END ABOUT SECTION ================-->
-    <!--=========== BEGAIN WORKS SECTION ================-->
-    <!-- BEGAIN MILESTONE WORSK SECTION -->
-    <div class="row">
-      <div class="col-lg-12 col-md-12">
-        <div class="counter_section">
-          <!-- SKILLS COUNTER OVERLAY -->
-          <!--div class="slider_overlay"></div-->
-          <div class="container">
-            <div class="counter_area">
-              <div class="heading">
-                <h3 class="wow fadeInLeft">Minhas Habilidades</h3>
-              </div>
-              <!-- START SINGLE COUNTER-->
-              <div class="col-lg-4 col-md-4 col-sm-4">
-                <div class="counter wow fadeInUp">
-                  <i class="icon-python fa-2x"></i>
-                  <p class="count-text ">Python</p>
-                  <p class="count-text-mini">(Numpy, Scipy, Matplotlib, Scikit e OpenCV)</p>
-                </div>
-              </div>
-              <!-- START SINGLE COUNTER-->
-              <div class="col-lg-4 col-md-4 col-sm-4">
-                <div class="counter wow fadeInUp">
-                  <i class="icon-c fa-2x"></i>
-                  <p class="count-text ">C</p>
-                  <p class="count-text-mini">(OpenMP e OpenMPI)</p>
-                </div>
-              </div>
-              <!-- START SINGLE COUNTER-->
-              <div class="col-lg-4 col-md-4 col-sm-4">
-                <div class="counter wow fadeInUp">
-                  <i class="fa fa-linux fa-2x"></i>
-                  <p class="count-text ">Distribuições Linux</p>
-                  <p class="count-text-mini">(Ubuntu, Linux Mint e Debian)</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- END MILESTONE WORSK SECTION -->
-    <section id="works">
-      <!-- BEGAIN FORTFOLIO WORSK SECTION -->
-      <div class="row">
-        <div class="portfolio_area">
-          <!-- BEGAIN PORTFOLIO HEADER -->
-          <div class="row">
-            <div class="col-lg-12 col-md-12">
-              <div class="container">
-                <div class="heading">
-                  <h2 class="wow fadeInLeftBig">Projetos</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- END PORTFOLIO HEADER -->
-          <!-- BEGAIN PORTFOLIO GALLERY -->
-          <div>
-            <ul id="da-thumbs" class="da-thumbs">
-              <li>
-                <a href="SiAPP-Nit-app/SiAPP-Nit.html">
-                  <img src="img/page/ccd.png" />
-                  <div><span>CCD-UFF:<br/>Clube de Ciência de Dados - <br/>Universidade Federal Fluminense</span></div>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <!-- END PORTFOLIO GALLERY -->
-        </div>
-      </div>
-      <!-- END FORTFOLIO WORSK SECTION -->
-    </section>
-    <!--=========== END WORKS SECTION ================-->
-    <!--=========== BEGAIN CONTACT SECTION ================-->
-    <section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 col-md-12 col-sm-12">
-            <!-- START CONTACT HEADING -->
-            <div class="heading">
-              <h2 class="wow fadeInLeftBig">Fale comigo</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <!-- BEGAIN CONTACT CONTENT -->
-          <div class="contact_content">
-            <!-- BEGAIN CONTACT FORM -->
-            <div class="col-lg-2 col-md-2 col-sm-2"></div>
-            <div class="col-lg-8 col-md-8 col-sm-8">
-              <div class="contact_form">
-                <!-- FOR CONTACT FORM MESSAGE -->
-                <div id="form-messages"></div>
-                <form action="#" method="GET">
-                  <input class="form-control" type="text" placeholder="Nome">
-                  <input class="form-control" type="email" placeholder="Email">
-                  <input class="form-control" type="text" placeholder="Assunto">
-                  <textarea class="form-control" cols="30" rows="5" placeholder="Sua mensagem"></textarea>
-                  <input class="submit_btn" type="submit" value="Enviar" style="align: right;">
-                  <div class="col-lg-5 col-md-5 col-sm-5"></div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--=========== END CONTACT SECTION ================-->
-    <!--=========== BEGAIN FOOTER ================-->
-    <footer id="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-6">
-            <div class="footer_left">
-              <p>Copyright &copy; 2017 <a href="#">Vítor Lourenço</a>. Todos direitos reservados</p>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-6">
-            <div class="footer_right">
-              <ul class="social_nav">
-                <li><a href="http://lattes.cnpq.br/7172413417236996"><i class="icon-lattes"></i></a></li>
-                <li><a href="https://www.facebook.com/vitornaslourenco"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/lourencovitor/"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="https://github.com/vitornl"><i class="fa fa-github"></i></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="footer_center">
-            <p>Feito com <img src="img/page/heart.png" alt="Coração"></img> no Rio de Janeiro.</p>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!--=========== END FOOTER ================-->
-    <!-- Javascript Files
-      ================================================== -->
-    <!-- initialize jQuery Library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <!-- Google map -->
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script src="js/jquery.ui.map.js"></script>
-    <!-- For smooth animatin  -->
-    <script src="js/wow.min.js"></script>
-    <!-- Bootstrap js -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- superslides slider -->
-    <script src="js/jquery.superslides.min.js" type="text/javascript"></script>
-    <!-- slick slider -->
-    <script src="js/slick.min.js"></script>
-    <!-- for circle counter -->
-    <script src='https://cdn.rawgit.com/pguso/jquery-plugin-circliful/master/js/jquery.circliful.min.js'></script>
-    <!-- for portfolio filter gallery -->
-    <script src="js/modernizr.custom.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/elastic_grid.min.js"></script>
-    <script src="js/portfolio_slider.js"></script>
-    <!-- Custom js-->
-    <script src="js/custom.js"></script>
-    <script src="js/jquery.hoverdir.js"></script>
-    <script type="text/javascript">
-      $(function() {
 
-          $(' #da-thumbs > li ').each(function() {
-              $(this).hoverdir({
-                  hoverDelay: 75
-              });
-          });
+<html><head>
+<title>Vítor N. Lourenço</title>
 
-      });
-    </script>
-  </body>
-</html>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109737589-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-109737589-1');
+</script>
+
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/academicons-1.8.6//css/academicons.min.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+
+
+<body>
+<div class="content">
+	<div id="container">
+
+	<table>
+	<tbody><tr>
+	<td><img id="Me" src="images/me.jpg" style="float:left; padding-right:20px;" height="200px"></td>
+	<td>
+	<div id="DocInfo">
+		<h1>Vítor N. Lourenço</h1>
+        Master Candidate at Computing Intitute, Federal Fluminense University<br>
+        Research Intern at IBM Research Brazil<br>
+        Emails: vitorlourenco@id.uff.br, vitor.nascimento@ibm.com<br>
+        | <i class="ai ai-cv" aria-hidden="true"></i> <a href="files/vlourenco_CV.pdf">CV</a>
+        | <i class="ai ai-orcid" aria-hidden="true"></i> <a href="https://orcid.org/0000-0003-0711-1339">ORCID</a>
+        | <i class="ai ai-google-scholar" aria-hidden="true"></i> <a href="https://scholar.google.com.br/citations?user=2md4VvgAAAAJ&hl">Google Scholar</a>
+        | <i class="fa fa-linkedin" aria-hidden="true"></i> <a href="https://www.linkedin.com/in/lourencovitor/">LinkedIn</a>
+        | <i class="ai ai-lattes" aria-hidden="true"></i> <a href="http://lattes.cnpq.br/7172413417236996">Lattes</a>
+        | <i class="fa fa-github" aria-hidden="true"></i> <a href="https://github.com/vitornl/">GitHub</a><br>
+
+	</div><br>
+	</td>
+	</tr>
+	</tbody></table>
+	<br>
+
+    <h2>Bio</h2>
+    <ul>
+        <li>Vítor Lourenço is currently a Master Candidate at <a href="www.ic.uff.br/">Computing Institute, Federal Fluminense University</a> and a Research Intern at IBM Research Brazil.
+            His research interests include machine learning, neural-symbolic integration, and knowledge representation. Particularly, he works with learned representation of graphs, and their applications in knowledge bases completion and reasosing over knowledge bases.</li>
+        <li>Vítor received his B.Sc degree from the Federal Fluminense University.</li>
+    </ul>
+
+	<h2>Selected Publications</h2>
+    <div>Looking for full publication list? See my <a href="files/vlourenco_CV.pdf">CV</a> or <a href="https://scholar.google.com.br/citations?user=2md4VvgAAAAJ&hl">Google Scholar</a>.</div>
+    <br>
+
+	<h5>2020</h5>
+
+    <div class="publication media">
+        <img src="images/papers/2020-ICSC.png" class="papericon">
+        <div class="media-body">
+            <b>Managing Machine Learning Workflow Components.</b><br>
+            Marcio Moreno, <u>Vítor Lourenço</u>, Sandro Rama Fiorini, Polyana Costa, Rafael Brandão, Daniel Civitarese, and Renato Cerqueira.<br>
+            <i>IEEE International Conference on ​Semantic Computing (ICSC), 2020.</i><br>
+            [<a href="https://arxiv.org/abs/1912.05665">Preprint</a>]
+        </div>
+	</div>
+
+    <h5>2019</h5>
+
+    <div class="publication media">
+        <img src="images/papers/2019-SIBGRAPI.png" class="papericon">
+        <div class="media-body">
+            <b>Hierarchy-of-Visual-Words: a Learning-based Approach for Trademark Image Retrieval.</b><br>
+            <u>Vítor N. Lourenço</u>, Gabriela G. Silva, and Leandro A.F. Fernandes.<br>
+            <i>Conference on Graphics, Patterns and Images (SIBGRAPI), 2019.</i><br>
+            <i class="fa fa-trophy" aria-hidden="true" style="color: gold"></i> Best Computer Vision/Image Processing/Pattern Recognition Main Track Paper Award.<br>
+            <i class="fa fa-trophy" aria-hidden="true" style="color: gold"></i> Best Work Award in the Workshop of Undergraduate Works (WUW).<br>
+            [<a href="https://ieeexplore.ieee.org/abstract/document/8919826">Paper</a>]
+            [<a href="https://arxiv.org/abs/1908.02786">Preprint</a>]
+            [<a href="https://github.com/Prograf-UFF/HoVW">Code</a>]
+	   </div>
+    </div>
+    
+    <div class="publication media">
+        <img src="images/papers/2019-WORKS.png" class="papericon">
+        <div class="media-body">
+            <b>Provenance Data in the Machine Learning Lifecycle in Computational Science and Engineering.</b><br>
+            Renan Souza, Leonardo Azevedo, <u>Vítor Lourenço</u>, Elton Soares, Raphael Thiago, Rafael Brandão, Daniel Civitarese, Emilio Vital Brazil, Marcio Moreno, Patrick Valduriez, Marta Mattoso, Renato Cerqueira, and Marco AS Netto.<br>
+            <i>Workflows in Support of Large-scale Science (WORKS), 2019 co-located with the ACM/IEEE International Conference for High Performance Computing, Networking, Storage, and Analysis (SC), 2019.</i><br>
+            [<a href="https://ieeexplore.ieee.org/abstract/document/8943505">Paper</a>]
+            [<a href="https://arxiv.org/abs/1910.04223">Preprint</a>]
+	   </div>
+	</div>
+
+    <h5>2018</h5>
+
+    <div class="publication media">
+        <img src="images/papers/2018-IJCNN.jpg" class="papericon">
+        <div class="media-body">
+            <b>Towards Safer (Smart) Cities: Discovering Urban Crime Patterns Using Logic-based Relational Machine Learning.</b><br>
+            <u>Vítor Lourenço</u>, Paulo Mann, Artur Guimarães, Aline Paes, and Daniel de Oliveira.<br>
+            <i>International Joint Conference on Neural Networks (IJCNN), 2018.</i><br>
+            [<a href="https://ieeexplore.ieee.org/document/8489374/">Paper</a>]
+            [<a href="https://www.researchgate.net/publication/328401052_Towards_Safer_Smart_Cities_Discovering_Urban_Crime_Patterns_Using_Logic-based_Relational_Machine_Learning">Preprint</a>]
+            [<a href="https://github.com/UFFeScience/CRiMINaL">Code</a>]
+	   </div>
+	</div>
+
+    <h2>Honors</h2>
+        <ul>
+            <li><b>National Council for Scientific and Technological Development Fellowship</b>, 2018.</li>
+        </ul>
+
+    <h2>Professional Activities</h2>
+    <ul>
+        <li><b>Research Intern</b> at IBM Research Brazil.</li>
+        <li><b>Teaching assistant</b> for Introduction to Data Science Bootcamp at School of Applied Mathematics, Getulio Vargas Fundation.</li>
+    </ul>
+
+</body></html>
