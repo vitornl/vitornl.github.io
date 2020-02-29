@@ -1,123 +1,205 @@
 <!DOCTYPE html>
 
-<html><head>
-<title>Vítor N. Lourenço</title>
+<html>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109737589-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-109737589-1');
-</script>
+<head>
+    <title>Vítor Nascimento Lourenço</title>
 
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="css/academicons-1.8.6//css/academicons.min.css">
-<link rel="stylesheet" href="css/styles.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109737589-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-109737589-1');
+    </script>
+    <script>
+        function auto_grow(element) {
+            element.style.height = "5px";
+            element.style.height = (element.scrollHeight)+"px";
+        }
+        function showbib(bibid) {
+            var selectedobj = document.getElementById(bibid);
+            if (selectedobj.className == 'hide') {
+                selectedobj.style.display = "block";
+                selectedobj.readOnly = true;
+                selectedobj.className = 'show';
+            } else {
+                selectedobj.style.display = "none";
+                selectedobj.className = 'hide';
+            }
+            auto_grow(selectedobj);
+        }
+    </script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/academicons-1.8.6//css/academicons.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 
 <body>
-<div class="content">
-	<div id="container">
+    <div class="content">
+        <div id="container">
 
-	<table>
-	<tbody><tr>
-	<td><img id="Me" src="images/me.jpg" style="float:left; padding-right:20px;" height="200px"></td>
-	<td>
-	<div id="DocInfo">
-		<h1>Vítor N. Lourenço</h1>
-        Master Candidate at Computing Intitute, Federal Fluminense University<br>
-        Research Intern at IBM Research Brazil<br>
-        Emails: vitorlourenco@id.uff.br, vitor.nascimento@ibm.com<br>
-        | <i class="ai ai-cv" aria-hidden="true"></i> <a href="files/vlourenco_CV.pdf">CV</a>
-        | <i class="ai ai-orcid" aria-hidden="true"></i> <a href="https://orcid.org/0000-0003-0711-1339">ORCID</a>
-        | <i class="ai ai-google-scholar" aria-hidden="true"></i> <a href="https://scholar.google.com.br/citations?user=2md4VvgAAAAJ&hl">Google Scholar</a>
-        | <i class="fa fa-linkedin" aria-hidden="true"></i> <a href="https://www.linkedin.com/in/lourencovitor/">LinkedIn</a>
-        | <i class="ai ai-lattes" aria-hidden="true"></i> <a href="http://lattes.cnpq.br/7172413417236996">Lattes</a>
-        | <i class="fa fa-github" aria-hidden="true"></i> <a href="https://github.com/vitornl/">GitHub</a><br>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><img id="Me" src="images/me.jpg" style="float:left; padding-right:20px;" height="200px">
+                        </td>
+                        <td>
+                            <div id="DocInfo">
+                                <h1>Vítor Nascimento Lourenço</h1>
+                                Master Candidate at Computing Intitute, Federal Fluminense University<br>
+                                Research Intern at IBM Research Brazil<br>
+                                Emails: vitorlourenco@id.uff.br, vitor.nascimento@ibm.com<br>
+                                | <i class="ai ai-cv" aria-hidden="true"></i> <a href="files/vlourenco_CV.pdf">CV</a>
+                                | <i class="ai ai-orcid" aria-hidden="true"></i> <a
+                                    href="https://orcid.org/0000-0003-0711-1339">ORCID</a>
+                                | <i class="ai ai-google-scholar" aria-hidden="true"></i> <a
+                                    href="https://scholar.google.com.br/citations?user=2md4VvgAAAAJ&hl">Google
+                                    Scholar</a>
+                                | <i class="fa fa-linkedin" aria-hidden="true"></i> <a
+                                    href="https://www.linkedin.com/in/lourencovitor/">LinkedIn</a>
+                                | <i class="ai ai-lattes" aria-hidden="true"></i> <a
+                                    href="http://lattes.cnpq.br/7172413417236996">Lattes</a>
+                                | <i class="fa fa-github" aria-hidden="true"></i> <a
+                                    href="https://github.com/vitornl/">GitHub</a><br>
 
-	</div><br>
-	</td>
-	</tr>
-	</tbody></table>
-	<br>
+                            </div><br>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
 
-    <h2>Bio</h2>
-    <ul>
-        <li>Vítor Lourenço is currently a Master Candidate at <a href="www.ic.uff.br/">Computing Institute, Federal Fluminense University</a> and a Research Intern at IBM Research Brazil.
-            His research interests include machine learning, neural-symbolic integration, and knowledge representation. Particularly, he works with learned representation of graphs, and their applications in knowledge bases completion and reasosing over knowledge bases.</li>
-        <li>Vítor received his B.Sc degree from the Federal Fluminense University.</li>
-    </ul>
+            <h2>Bio</h2>
+            <ul>
+                <li>Vítor Lourenço is currently a Master Candidate at <a href="https://www.ic.uff.br/">Computing
+                        Institute, Federal Fluminense University</a> and a Research Intern at IBM Research Brazil.
+                    His research interests include machine learning, neural-symbolic integration, and knowledge
+                    representation. Particularly, he works with learned representation of graphs, and their applications
+                    in knowledge bases completion and reasosing over knowledge bases.</li>
+                <li>Vítor received his B.Sc degree from the Federal Fluminense University.</li>
+            </ul>
 
-	<h2>Selected Publications</h2>
-    <div>Looking for full publication list? See my <a href="files/vlourenco_CV.pdf">CV</a> or <a href="https://scholar.google.com.br/citations?user=2md4VvgAAAAJ&hl">Google Scholar</a>.</div>
-    <br>
+            <h2>Selected Publications</h2>
+            <div>Looking for full publication list? See my <a href="files/vlourenco_CV.pdf">CV</a> or <a
+                    href="https://scholar.google.com.br/citations?user=2md4VvgAAAAJ&hl">Google Scholar</a>.</div>
+            <br>
+            <h5>2020</h5>
 
-	<h5>2020</h5>
+            <div class="publication media">
+                <img src="images/papers/2020-ICSC.png" class="papericon">
+                <div class="media-body">
+                    <b>Managing Machine Learning Workflow Components.</b><br>
+                    Marcio Moreno, <u>Vítor Lourenço</u>, Sandro Rama Fiorini, Polyana Costa, Rafael Brandão, Daniel
+                    Civitarese, and Renato Cerqueira.<br>
+                    <i>IEEE International Conference on ​Semantic Computing (ICSC), 2020.</i><br>
+                    [<a href="https://arxiv.org/abs/1912.05665">Preprint</a>]
+                    [<a href="javascript:void(0)"><label onclick="showbib('2020icsc')">bibtex</label></a>]
+<pre id="2020icsc" style="display:none" class="hide">@inproceedings{moreno2020icsc,
+    author={Marcio Moreno, V\'{i}tor Louren\c{c}o, Sandro Rama Fiorini, Polyana Costa, Rafael Brand\~{a}o, Daniel Civitarese, Renato Cerqueira},
+    booktitle={14th IEEE Conference on Semantic Computing (ICSC)},
+    title={Managing Machine Learning Workflow Components},
+    year={2020}
+}</pre>​
+                </div>
+            </div>
 
-    <div class="publication media">
-        <img src="images/papers/2020-ICSC.png" class="papericon">
-        <div class="media-body">
-            <b>Managing Machine Learning Workflow Components.</b><br>
-            Marcio Moreno, <u>Vítor Lourenço</u>, Sandro Rama Fiorini, Polyana Costa, Rafael Brandão, Daniel Civitarese, and Renato Cerqueira.<br>
-            <i>IEEE International Conference on ​Semantic Computing (ICSC), 2020.</i><br>
-            [<a href="https://arxiv.org/abs/1912.05665">Preprint</a>]
-        </div>
-	</div>
+            <h5>2019</h5>
 
-    <h5>2019</h5>
+            <div class="publication media">
+                <img src="images/papers/2019-SIBGRAPI.png" class="papericon">
+                <div class="media-body">
+                    <b>Hierarchy-of-Visual-Words: a Learning-based Approach for Trademark Image Retrieval.</b><br>
+                    <u>Vítor N. Lourenço</u>, Gabriela G. Silva, and Leandro A.F. Fernandes.<br>
+                    <i>Conference on Graphics, Patterns and Images (SIBGRAPI), 2019.</i><br>
+                    <i class="fa fa-trophy" aria-hidden="true" style="color: gold"></i> Best Computer Vision/Image
+                    Processing/Pattern Recognition Main Track Paper Award.<br>
+                    <i class="fa fa-trophy" aria-hidden="true" style="color: gold"></i> Best Work Award in the Workshop
+                    of Undergraduate Works (WUW).<br>
+                    [<a href="https://ieeexplore.ieee.org/abstract/document/8919826">Paper</a>]
+                    [<a href="https://arxiv.org/abs/1908.02786">Preprint</a>]
+                    [<a href="https://github.com/Prograf-UFF/HoVW">Code</a>]
+                    [<a href="javascript:void(0)"><label onclick="showbib('2019sibgrapi')">bibtex</label></a>]
+<pre id="2019sibgrapi" style="display:none" class="hide">@inproceedings{lourenco2019sibgrapi,
+    author={V. N. {Louren\c{c}o} and G. G. {Silva} and L. A. F. {Fernandes}},
+    booktitle={2019 32nd SIBGRAPI Conference on Graphics, Patterns and Images (SIBGRAPI)},
+    title={Hierarchy-of-Visual-Words: a Learning-Based Approach for Trademark Image Retrieval},
+    year={2019},
+    pages={218-225},
+    doi={10.1109/SIBGRAPI.2019.00037},
+    ISSN={1530-1834}
+}</pre>​
+                </div>
+            </div>
 
-    <div class="publication media">
-        <img src="images/papers/2019-SIBGRAPI.png" class="papericon">
-        <div class="media-body">
-            <b>Hierarchy-of-Visual-Words: a Learning-based Approach for Trademark Image Retrieval.</b><br>
-            <u>Vítor N. Lourenço</u>, Gabriela G. Silva, and Leandro A.F. Fernandes.<br>
-            <i>Conference on Graphics, Patterns and Images (SIBGRAPI), 2019.</i><br>
-            <i class="fa fa-trophy" aria-hidden="true" style="color: gold"></i> Best Computer Vision/Image Processing/Pattern Recognition Main Track Paper Award.<br>
-            <i class="fa fa-trophy" aria-hidden="true" style="color: gold"></i> Best Work Award in the Workshop of Undergraduate Works (WUW).<br>
-            [<a href="https://ieeexplore.ieee.org/abstract/document/8919826">Paper</a>]
-            [<a href="https://arxiv.org/abs/1908.02786">Preprint</a>]
-            [<a href="https://github.com/Prograf-UFF/HoVW">Code</a>]
-	   </div>
-    </div>
-    
-    <div class="publication media">
-        <img src="images/papers/2019-WORKS.png" class="papericon">
-        <div class="media-body">
-            <b>Provenance Data in the Machine Learning Lifecycle in Computational Science and Engineering.</b><br>
-            Renan Souza, Leonardo Azevedo, <u>Vítor Lourenço</u>, Elton Soares, Raphael Thiago, Rafael Brandão, Daniel Civitarese, Emilio Vital Brazil, Marcio Moreno, Patrick Valduriez, Marta Mattoso, Renato Cerqueira, and Marco AS Netto.<br>
-            <i>Workflows in Support of Large-scale Science (WORKS), 2019 co-located with the ACM/IEEE International Conference for High Performance Computing, Networking, Storage, and Analysis (SC), 2019.</i><br>
-            [<a href="https://ieeexplore.ieee.org/abstract/document/8943505">Paper</a>]
-            [<a href="https://arxiv.org/abs/1910.04223">Preprint</a>]
-	   </div>
-	</div>
+            <div class="publication media">
+                <img src="images/papers/2019-WORKS.png" class="papericon">
+                <div class="media-body">
+                    <b>Provenance Data in the Machine Learning Lifecycle in Computational Science and
+                        Engineering.</b><br>
+                    Renan Souza, Leonardo Azevedo, <u>Vítor Lourenço</u>, Elton Soares, Raphael Thiago, Rafael Brandão,
+                    Daniel Civitarese, Emilio Vital Brazil, Marcio Moreno, Patrick Valduriez, Marta Mattoso, Renato
+                    Cerqueira, and Marco AS Netto.<br>
+                    <i>Workflows in Support of Large-scale Science (WORKS), 2019 co-located with the ACM/IEEE
+                        International Conference for High Performance Computing, Networking, Storage, and Analysis (SC),
+                        2019.</i><br>
+                    [<a href="https://ieeexplore.ieee.org/abstract/document/8943505">Paper</a>]
+                    [<a href="https://arxiv.org/abs/1910.04223">Preprint</a>]
+                    [<a href="javascript:void(0)"><label onclick="showbib('2019works')">bibtex</label></a>]
+<pre id="2019works" style="display:none" class="hide">@inproceedings{souza2019works,
+    author={R. {Souza} and L. {Azevedo} and V. {Louren\c{c}o} and E. {Soares} and R. {Thiago} and R. {Brandão} and D. {Civitarese} and E. {Brazil} and M. {Moreno} and P. {Valduriez} and M. {Mattoso} and R. {Cerqueira} and M. A. S. {Netto}},
+    booktitle={2019 IEEE/ACM Workflows in Support of Large-Scale Science (WORKS)},
+    title={Provenance Data in the Machine Learning Lifecycle in Computational Science and Engineering},
+    year={2019},
+    pages={1-10},
+    doi={10.1109/WORKS49585.2019.00006}
+}</pre>​
+                </div>
+            </div>
 
-    <h5>2018</h5>
+            <h5>2018</h5>
 
-    <div class="publication media">
-        <img src="images/papers/2018-IJCNN.jpg" class="papericon">
-        <div class="media-body">
-            <b>Towards Safer (Smart) Cities: Discovering Urban Crime Patterns Using Logic-based Relational Machine Learning.</b><br>
-            <u>Vítor Lourenço</u>, Paulo Mann, Artur Guimarães, Aline Paes, and Daniel de Oliveira.<br>
-            <i>International Joint Conference on Neural Networks (IJCNN), 2018.</i><br>
-            [<a href="https://ieeexplore.ieee.org/document/8489374/">Paper</a>]
-            [<a href="https://www.researchgate.net/publication/328401052_Towards_Safer_Smart_Cities_Discovering_Urban_Crime_Patterns_Using_Logic-based_Relational_Machine_Learning">Preprint</a>]
-            [<a href="https://github.com/UFFeScience/CRiMINaL">Code</a>]
-	   </div>
-	</div>
+            <div class="publication media">
+                <img src="images/papers/2018-IJCNN.jpg" class="papericon">
+                <div class="media-body">
+                    <b>Towards Safer (Smart) Cities: Discovering Urban Crime Patterns Using Logic-based Relational
+                        Machine Learning.</b><br>
+                    <u>Vítor Lourenço</u>, Paulo Mann, Artur Guimarães, Aline Paes, and Daniel de Oliveira.<br>
+                    <i>International Joint Conference on Neural Networks (IJCNN), 2018.</i><br>
+                    [<a href="https://ieeexplore.ieee.org/document/8489374/">Paper</a>]
+                    [<a
+                        href="https://www.researchgate.net/publication/328401052_Towards_Safer_Smart_Cities_Discovering_Urban_Crime_Patterns_Using_Logic-based_Relational_Machine_Learning">Preprint</a>]
+                    [<a href="https://github.com/UFFeScience/CRiMINaL">Code</a>]
+                    [<a href="javascript:void(0)"><label onclick="showbib('2018ijcnn')">bibtex</label></a>]
+<pre id="2018ijcnn" style="display:none" class="hide">@inproceedings{lourenco2018ijcnn,
+    author={V. {Louren\c{c}o} and P. {Mann} and A. {Guimar\~{a}es} and A. {Paes} and D. {de Oliveira}},
+    booktitle={2018 International Joint Conference on Neural Networks (IJCNN)},
+    title={Towards Safer (Smart) Cities: Discovering Urban Crime Patterns Using Logic-based Relational Machine Learning},
+    year={2018},
+    pages={1-8},
+    doi={10.1109/IJCNN.2018.8489374},
+    ISSN={2161-4407}    
+}</pre>​
+                </div>
+            </div>
 
-    <h2>Honors</h2>
-        <ul>
-            <li><b>National Council for Scientific and Technological Development Fellowship</b>, 2018.</li>
-        </ul>
+            <h2>Honors</h2>
+            <ul>
+                <li><b>National Council for Scientific and Technological Development Fellowship</b>, 2018.</li>
+            </ul>
 
-    <h2>Professional Activities</h2>
-    <ul>
-        <li><b>Research Intern</b> at IBM Research Brazil.</li>
-        <li><b>Teaching assistant</b> for Introduction to Data Science Bootcamp at School of Applied Mathematics, Getulio Vargas Fundation.</li>
-    </ul>
-
-</body></html>
+            <h2>Professional Activities</h2>
+            <ul>
+                <li><b>Research Intern</b> at IBM Research Brazil.</li>
+                <li><b>Teaching assistant</b> for Introduction to Data Science Bootcamp at School of Applied
+                    Mathematics, Getulio Vargas Fundation.</li>
+            </ul>
+</body>
+</html>
