@@ -19,7 +19,7 @@
     <script>
         function auto_grow(element) {
             element.style.height = "5px";
-            element.style.height = (element.scrollHeight)+"px";
+            element.style.height = (element.scrollHeight) + "px";
         }
         function showbib(bibid) {
             var selectedobj = document.getElementById(bibid);
@@ -39,6 +39,11 @@
     <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/academicons-1.8.6//css/academicons.min.css">
     <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Lightweight client-side loader that feature-detects and load polyfills only when necessary -->
+    <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
+    <!-- Load the element definition -->
+    <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
 </head>
 
 
@@ -49,13 +54,13 @@
             <table>
                 <tbody>
                     <tr>
-                        <td><img id="Me" src="images/me.jpg" style="float:left; padding-right:20px;" height="200px">
+                        <td><img id="Me" src="images/me.png" style="float:left; padding-right:20px;" height="200px">
                         </td>
                         <td>
                             <div id="DocInfo">
                                 <h1>Vítor Nascimento Lourenço</h1>
-                                Master Candidate at Computing Intitute, Federal Fluminense University<br>
-                                Research Software Engineer at Stealth Mode Startup<br>
+                                Ph.D. Student at Computing Intitute, Federal Fluminense University<br>
+                                Data Science Advisor at Dell Technologies<br>
                                 Emails: vitorlourenco@id.uff.br<br>
                                 | <i class="ai ai-cv" aria-hidden="true"></i> <a href="files/vlourenco_CV.pdf">CV</a>
                                 | <i class="ai ai-orcid" aria-hidden="true"></i> <a
@@ -79,29 +84,74 @@
 
             <h2>Bio</h2>
             <ul>
-                <li>Vítor Lourenço is currently a Master Candidate at <a href="https://www.ic.uff.br/">Computing 
-                    Institute, Federal Fluminense University</a>. His research interests includes machine learning, neural-symbolic
-                    integration, knowledge representation, and representation learning. Mainly, he works with learned representations of graphs 
-                    and their applications in knowledge bases completion and reasoning over knowledge bases.</li>
-                <li>Vítor received his B.Sc degree from the Federal Fluminense University.</li>
+                <li>Vítor Lourenço is currently a Ph.D. Student at <a href="https://www.ic.uff.br/">Computing Institute,
+                        Federal Fluminense University</a>. His research interests includes machine learning,
+                    neural-symbolic integration, knowledge representation, explainable AI, graph neural networks.
+                    Mainly, he works with explainable aspects of multimodal graph data to fact checking in social
+                    networks;</li>
+                <li>Vítor received his M.Sc. and his B.Sc degree from the Federal Fluminense University.</li>
             </ul>
-            
+
             <h2>News</h2>
             <ul>
-                <li>[01/11/2020] Our two new papers on handling cyclic machine learning workflows were accepted as a poster and an industry paper on ISWC:
-                    <a href="http://ceur-ws.org/Vol-2721/paper504.pdf">Cycle Orchestrator: A Knowledge-Based Approach for Structuring Cyclic ML Pipelines in the O&G Industry</a>
-                    and <a href="http://ceur-ws.org/Vol-2721/paper562.pdf">A Knowledge-Based Approach for Structuring Cyclic Workflows</a>;
-                <li>[30/09/2020] New preprint of <a href="https://arxiv.org/abs/2010.00330">Workflow Provenance in the Lifecycle of Scientific 
-                    Machine Learning</a> is available at ArXiv;
-                <li>[28/09/2020] Our ICSC 2020 paper "Managing Machine Learning Workflow Components" was invited to be extended at the IJSC and
-                    the extended version has just come out: <a href="https://www.worldscientific.com/doi/abs/10.1142/S1793351X20400115">Managing
-                    Machine Learning Workflow Components</a>.</li>
+                <li>[20/10/2022] Our paper "A Modality-level Explainable Framework for Misinformation Checking in Social
+                    Networks" was accepted for both oral and poster presentations at LXAI @ NeurIPS 2022;</li>
+                <li>[05/09/2022] Started as Data Science Advisor at Dell Technologies.</li>
             </ul>
 
             <h2>Selected Publications</h2>
             <div>Looking for full publication list? See my <a href="files/vlourenco_CV.pdf">CV</a> or <a
                     href="https://scholar.google.com.br/citations?user=2md4VvgAAAAJ&hl">Google Scholar</a>.</div>
             <br>
+
+            <h5>2022</h5>
+
+            <div class="publication media">
+                <img src="images/papers/2022-KBS.jpg" class="papericon">
+                <div class="media-body">
+                    <b>Learning Attention-based Representations from Multiple Patterns for Relation Prediction in Knowledge Graphs.</b><br>
+                    <u>Vítor Lourenço</u>, Aline Paes.<br>
+                    <i>Knowledge-based Systems, 2022.</i><br>
+                    [<a href="https://doi.org/10.1016/j.knosys.2022.109232">Paper</a>]
+                    [<a href="https://arxiv.org/abs/2206.04801">Preprint</a>]
+                    [<a href="javascript:void(0)"><label onclick="showbib('2022kbs')">bibtex</label></a>]
+                    <pre id="2022kbs" style="display:none" class="hide">@article{lourenco2022kbs,
+    title    = {{Workflow Provenance in the Lifecycle of Scientific Machine Learning}},
+    author={V. {Louren\c{c}o} and A. {Paes}},
+    journal  = {Knowledge-Based Systems},
+    year     = {2022},
+    volume   = {251},
+    pages = {109232},
+    doi = {10.1016/j.knosys.2022.109232}
+}</pre>​
+                </div>
+            </div>
+
+            <h5>2021</h5>
+
+            <div class="publication media">
+                <img src="images/papers/2021-CCPE.png" class="papericon">
+                <div class="media-body">
+                    <b>Workflow Provenance in the Lifecycle of Scientific Machine Learning.</b><br>
+                    Renan Souza, Leonardo Azevedo, <u>Vítor Lourenço</u>, Elton Soares, Raphael Thiago, Rafael Brandão,
+                    Daniel Civitarese, Emilio Vital Brazil, Marcio Moreno, Patrick Valduriez, Marta Mattoso, Renato
+                    Cerqueira, and Marco AS Netto.<br>
+                    <i>Concurrency Computation Practice and Experience, 2021.</i><br>
+                    [<a href="https://doi.org/10.1002/cpe.6544">Paper</a>]
+                    [<a href="https://arxiv.org/abs/2010.00330">Preprint</a>]
+                    [<a href="javascript:void(0)"><label onclick="showbib('2021ccpe')">bibtex</label></a>]
+                    <pre id="2021ccpe" style="display:none" class="hide">@article{souza2021ccpe,
+    title    = {{Workflow Provenance in the Lifecycle of Scientific Machine Learning}},
+    author={R. {Souza} and L. {Azevedo} and V. {Louren\c{c}o} and E. {Soares} and R. {Thiago} and R. {Brandão} and D. {Civitarese} and E. {Brazil} and M. {Moreno} and P. {Valduriez} and M. {Mattoso} and R. {Cerqueira} and M. A. S. {Netto}},
+    journal  = {Concurrency Computation Practice and Experience},
+    year     = {2021},
+    volume   = {34},
+    pages    = {1--21},
+    doi = {10.1002/cpe.6544}
+}</pre>​
+                </div>
+            </div>
+
             <h5>2020</h5>
 
             <div class="publication media">
@@ -115,7 +165,7 @@
                     [<a href="https://arxiv.org/abs/1912.05665">Preprint</a>]
                     [<a href="https://github.com/ibm-hyperknowledge/mlwfm">Code</a>]
                     [<a href="javascript:void(0)"><label onclick="showbib('2020ijsc')">bibtex</label></a>]
-<pre id="2020ijsc" style="display:none" class="hide">@article{moreno2020mlwfm,
+                    <pre id="2020ijsc" style="display:none" class="hide">@article{moreno2020mlwfm,
     title    = {{Managing Machine Learning Workflow Components}},
     author   = {M. {Moreno} and V. {Louren\c{c}o} and  S. R. {Fiorini} and P. {Costa} and R. {Brand\~{a}o} and D. {Civitarese} and R. {Cerqueira}},
     journal  = {International Journal of Semantic Computing},
@@ -144,7 +194,7 @@
                     [<a href="https://arxiv.org/abs/1908.02786">Preprint</a>]
                     [<a href="https://github.com/Prograf-UFF/HoVW">Code</a>]
                     [<a href="javascript:void(0)"><label onclick="showbib('2019sibgrapi')">bibtex</label></a>]
-<pre id="2019sibgrapi" style="display:none" class="hide">@inproceedings{lourenco2019sibgrapi,
+                    <pre id="2019sibgrapi" style="display:none" class="hide">@inproceedings{lourenco2019sibgrapi,
     author={V. N. {Louren\c{c}o} and G. G. {Silva} and L. A. F. {Fernandes}},
     booktitle={2019 32nd SIBGRAPI Conference on Graphics, Patterns and Images (SIBGRAPI)},
     title={Hierarchy-of-Visual-Words: a Learning-Based Approach for Trademark Image Retrieval},
@@ -170,7 +220,7 @@
                     [<a href="https://ieeexplore.ieee.org/abstract/document/8943505">Paper</a>]
                     [<a href="https://arxiv.org/abs/1910.04223">Preprint</a>]
                     [<a href="javascript:void(0)"><label onclick="showbib('2019works')">bibtex</label></a>]
-<pre id="2019works" style="display:none" class="hide">@inproceedings{souza2019works,
+                    <pre id="2019works" style="display:none" class="hide">@inproceedings{souza2019works,
     author={R. {Souza} and L. {Azevedo} and V. {Louren\c{c}o} and E. {Soares} and R. {Thiago} and R. {Brandão} and D. {Civitarese} and E. {Brazil} and M. {Moreno} and P. {Valduriez} and M. {Mattoso} and R. {Cerqueira} and M. A. S. {Netto}},
     booktitle={2019 IEEE/ACM Workflows in Support of Large-Scale Science (WORKS)},
     title={Provenance Data in the Machine Learning Lifecycle in Computational Science and Engineering},
@@ -195,7 +245,7 @@
                         href="https://www.researchgate.net/publication/328401052_Towards_Safer_Smart_Cities_Discovering_Urban_Crime_Patterns_Using_Logic-based_Relational_Machine_Learning">Preprint</a>]
                     [<a href="https://github.com/UFFeScience/CRiMINaL">Code</a>]
                     [<a href="javascript:void(0)"><label onclick="showbib('2018ijcnn')">bibtex</label></a>]
-<pre id="2018ijcnn" style="display:none" class="hide">@inproceedings{lourenco2018ijcnn,
+                    <pre id="2018ijcnn" style="display:none" class="hide">@inproceedings{lourenco2018ijcnn,
     author={V. {Louren\c{c}o} and P. {Mann} and A. {Guimar\~{a}es} and A. {Paes} and D. {de Oliveira}},
     booktitle={2018 International Joint Conference on Neural Networks (IJCNN)},
     title={Towards Safer (Smart) Cities: Discovering Urban Crime Patterns Using Logic-based Relational Machine Learning},
@@ -207,7 +257,7 @@
                 </div>
             </div>
 
-            <h2>Honors</h2>
+            <!-- <h2>Honors</h2>
             <ul>
                 <li><b>National Council for Scientific and Technological Development Fellowship</b>, 2018.</li>
             </ul>
@@ -217,6 +267,7 @@
                 <li><b>Research Intern</b> at IBM Research Brazil.</li>
                 <li><b>Teaching assistant</b> for Introduction to Data Science Bootcamp at School of Applied
                     Mathematics, Getulio Vargas Fundation.</li>
-            </ul>
+            </ul> -->
 </body>
+
 </html>
